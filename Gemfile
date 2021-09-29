@@ -3,11 +3,11 @@ ruby "2.4.3"
 
 # This will help ensure the proper Jekyll version is running.
 gem "jekyll", "3.6.2"
-gem "html-proofer", :groups => [:development, :test]
+gem "html-proofer", ">= 3.10.0", :groups => [:development, :test]
 gem "git-set-mtime", github: "jayvdb/git-set-mtime", branch: "file-exists"
 
 group :jekyll_plugins do
-  gem "github-pages"
+  gem "github-pages", ">= 177"
   gem "jekyll-netlify", github: 'jayvdb/jekyll-netlify', ref: 'e7efada3'
   gem "disqus-for-jekyll"
   gem 'jekyll-last-modified-at', github: 'riouwa/jekyll-last-modified-at', branch: 'no-git'
